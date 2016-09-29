@@ -29,6 +29,8 @@ class RefinedAbstraction extends Abstraction{
     }
 }
 
+// ==============================================================================
+
 //实现化角色,给出实现化角色的接口,但不给出具体的实现
 abstract class Implementor{
     abstract public function operationImp();
