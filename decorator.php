@@ -5,6 +5,13 @@
  * User: chenlili
  * Date: 10/9/16
  * Time: 3:25 PM
+ * 装饰器设计模式
+ * 装饰器参与者可以包装一个组建对象，这样就能为这个已有的组建增加职责，而无须对它做任何修改
+ * 首先必须创建一个要包装的具体组件类实例
+ * $component = new ConcreteComponent();
+ * Decorator参与者用具体组建包装Component参与者
+ * 为现有对象增加新功能而不想影响其他对象，就可以使用装饰器模式
+ * Decorator类的主要作用就似乎维护组建接口的一个链接(引用)
  */
 interface Component{
     public function operation();
@@ -37,7 +44,7 @@ class ConcreteDecoratorA extends Decorator{
         $this->addedOperationA(); //新增加的操作
     }
 
-    public function addedOperationA(){ echo 'A加点酱油;';}
+    public function addedOperationA(){ echo 'A加点酱油'."\n";}
 }
 
 //具体装饰类B
@@ -53,7 +60,7 @@ class ConcreteDecoratorB extends Decorator{
         $this->addedOperationB();
     }
 
-    public function addedOperationB(){ echo 'B加点辣椒；';}
+    public function addedOperationB(){ echo 'B加点辣椒';}
 }
 
 //具体组件类
