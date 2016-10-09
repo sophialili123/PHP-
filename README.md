@@ -6,3 +6,12 @@
    3）工厂方法
    4）原型
    5）单例
+
+三、结构型设计模式,重点是创建新结构而不破坏原有的结构
+   1）适配器模式Adapter（类和对象）
+   2）桥接模式Bridge
+   3）组合模式Composite
+   4）装饰器模式Decorator
+   5）外观模式Pacade
+   6）享元模式Flyweight
+   7）代理模式Proxy
