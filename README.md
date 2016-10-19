@@ -23,7 +23,7 @@
    
 4）装饰器模式Decorator
    
-5）外观模式Pacade
+5）外观模式Facade
    
 6）享元模式Flyweight
    
