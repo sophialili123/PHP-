@@ -10,11 +10,11 @@
  */
 class ProxyBookList
 {
-    private $bookList = null;
+    private $bookList = null;//重点在这里,只有在调用方法的时候进行实例化
 
     public function getBookCount()
     {
-        if (null == $this->bookList) {
+        if (null == $this->bookList) {//重点在这里,只有在调用方法的时候进行实例化
             $this->makeBookList();
         }
 
@@ -23,7 +23,7 @@ class ProxyBookList
 
     public function addBook($book)
     {
-        if (null == $this->bookList) {
+        if (null == $this->bookList) {//重点在这里,只有在调用方法的时候进行实例化
             $this->makeBookList();
         }
 
@@ -32,7 +32,7 @@ class ProxyBookList
 
     public function getBook($bookNum)
     {
-        if (null == $this->bookList) {
+        if (null == $this->bookList) {//重点在这里,只有在调用方法的时候进行实例化
             $this->makeBookList();
         }
 

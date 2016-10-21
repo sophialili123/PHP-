@@ -29,13 +29,13 @@ class FlyweightFactory
 
     public function __construct()
     {
-        $this->books = array_fill(0, 3, null);
+        $this->books = array_fill(0, 3, null);//预定义长度为3的数组
     }
 
     public function getBook($bookKey)
     {
         if (null == $this->books[$bookKey]) {
-            $makeFunction = 'makeBook'.$bookKey;
+            $makeFunction = 'makeBook'.$bookKey;//重点在这里，拼接式方法调用
             $this->books[$bookKey] = $this->$makeFunction();
         }
 

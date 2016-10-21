@@ -27,7 +27,7 @@ class ProxySubject extends Subject{//代理主题角色
     {
         // TODO: Implement actoin() method.
         $this->_beforeAction();
-        if(is_null($this->_real_subject)){
+        if(is_null($this->_real_subject)){//重点在这里,只有在调用方法的时候进行实例化
             $this->_real_subject = new RealSubject();
         }
         $this->_real_subject->actoin();
